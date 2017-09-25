@@ -1,0 +1,31 @@
+<!--pages/add/add.wxml-->
+<view >{{tip}}</view>
+
+
+<form bindsubmit="formBindsubmit" bindreset="formReset">
+  <!--<view style="display:flex;">
+    <label>类型：</label>
+    <input name="type_" placeholder="请输入类型！"  />
+  </view>-->
+  <view style="display:flex;">
+         <label>类型：</label>
+          <picker bindchange="bindTypePickerChange" value="{{current_index}}" range="{{type_}}">
+            <view>
+              <text>{{type_[current_index]}}</text>
+            </view>
+          </picker>
+        </view>
+
+  <view style="display:flex;">
+    <label>金额：</label>
+    <input name="money_" placeholder="请输入金额！"   />
+  </view>
+  <view style="display:flex;">
+    <label>备注：</label>
+    <input name="remark_" placeholder="请输入备注！" />
+  </view>
+  <view style="display:flex;margin-top:30px;">
+    <button style="width:30%;" formType="submit" >新增</button>
+    <button style="width:30%" formType="reset" >重置</button>
+  </view>
+</form>

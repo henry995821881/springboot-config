@@ -1,0 +1,12 @@
+[14:55:50:845] [INFO] -  - Starting Application on henry-PC with PID 8744 (C:\D\Workspaces_mar_20170718\wx-account\target\classes started by Administrator in C:\D\Workspaces_mar_20170718\wx-account)
+[14:55:50:850] [INFO] -  - No active profile set, falling back to default profiles: default
+[14:55:51:017] [INFO] -  - HV000001: Hibernate Validator 5.3.5.Final
+[14:55:51:975] [INFO] -  - MLog clients using slf4j logging.
+[14:55:52:127] [INFO] -  - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[14:55:52:742] [INFO] -  - Starting service [Tomcat]
+[14:55:52:743] [INFO] -  - Starting Servlet Engine: Apache Tomcat/8.5.16
+[14:55:52:823] [INFO] -  - Initializing Spring embedded WebApplicationContext
+[14:55:53:940] [INFO] -  - Initializing ProtocolHandler ["http-nio-9090"]
+[14:55:53:948] [INFO] -  - Starting ProtocolHandler ["http-nio-9090"]
+[14:55:53:962] [INFO] -  - Using a shared selector for servlet write/read
+[14:55:53:982] [INFO] -  - Started Application in 3.322 seconds (JVM running for 6.041)

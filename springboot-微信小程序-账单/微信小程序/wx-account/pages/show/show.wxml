@@ -1,0 +1,23 @@
+<!--pages/show/show.wxml-->
+
+
+<view class="container">
+    <view class="table">
+        <view class="tr">
+            <view class="th">index</view>
+            <view class="th">类型</view>
+          
+            <view class="th">金额</view>
+            <view class="th">时间</view>
+         
+        </view>
+        <view class="tr" wx:for="{{account_s}}">
+            <view class="td">{{index+1}}</view>
+            <view class="td">{{item.type}}</view>
+           
+            <view class="td">{{item.money/100}}</view>
+            <view class="td">{{item.createDateStr}}</view>
+             
+        </view>
+    </view>
+</view>
