@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="org.henry.springboot1.dao.UserDao">
+    <resultMap id="userMap" type="org.henry.springboot1.bean.User">
+		<result property="age" column="age"/>
+		<result property="username" column="username"/>
+		<result property="desc" column="desc"/>
+		
+    </resultMap>
+    
+ <select id="getUser" resultMap="userMap">
+ 	select * from user
+ 	
+ </select>
+   
+   <insert id="setUser" parameterType="org.henry.springboot1.bean.User">
+   	
+   	insert into user(username,age,`desc`) values(#{username},#{age},#{desc})
+   	
+   </insert> 
+</mapper>
