@@ -118,6 +118,27 @@
         </dependency>
   </dependencies>
    <build>
+   <resources>
+   <resource>
+            <directory>static/</directory>
+            <includes>
+                <!-- <include>**/*.properties</include>
+                <include>**/*.xml</include> -->
+                <include>**/*</include>
+            </includes>
+            <filtering>false</filtering>
+            <targetPath>BOOT-INF/classes/static</targetPath>
+        </resource>
+       
+         <resource>
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>**/*</include>
+                
+            </includes>
+            <filtering>false</filtering>
+        </resource> 
+    </resources>
     <plugins>
         <plugin>
             <groupId>org.springframework.boot</groupId>
